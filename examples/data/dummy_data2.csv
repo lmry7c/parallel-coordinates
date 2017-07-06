@@ -1,0 +1,25 @@
+,Country Name,Region,Year,BBR national Coverage1 central gov 2 general gov see note in excel for 1 cover_n_BBR,BBR national Formal enforcement procedure1 if yes 0 if no enforce_n_BBR,BBR national Monitoring outside government 1 if yes 0 if no monitor_n_BBR,BBR nation Escape clause1 if yes 0 if no 0 25 if not binding escap_n_BBR,BBR nationlegal1Pol C 2CoalitionA 3Stat 4Inter treaty 5Const legal_n_BBR,Budget balance rule at the national level 1 supranational level 2 or both BBR_supra,Debt rule at the national level 1 supranational level 2 or both 3 DR_supra,DR national Coverage1 central gov 2 general gov see note in excel for 15 cover_n_DR,DR national Formal enforcement procedure1 if yes 0 if no enforce_n_DR,DR national Monitoring outside government 1 if yes 0 if no monitor_n_DR,DR nation Escape clause1 if yes 0 if no 025 if not binding escap_n_DR,DR nationlegal1Pol C 2CoalitionA 3Stat 4Inter treaty 5Const legal_n_DR,BBR supra Coverage1 central gov 2 general gov see note in excel for 15 cover_s_BBR,BBR supra Escape clause1 if yes 0 if no 025 if not binding escap_s_BBR,BBR supra Formal enforcement procedure1 if yes 0 if no enforce_s_BBR,BBR supralegal1Pol C 2CoalitionA 3Stat 4Inter treaty 5Const legal_s_BBR,BBR supra Monitoring outside government 1 if yes 0 if no monitor_s_BBR
+0,Argentina,South America,2000,0,0,2,4,2,1,1,4,4,1,4,1,3,0,1,2,3
+1,Argentina,South America,2001,2,0,3,3,3,3,3,0,0,0,4,3,2,4,1,2,2
+2,Argentina,South America,2002,3,1,4,3,3,0,3,1,1,3,4,4,0,3,0,0,3
+3,Argentina,South America,2003,3,4,4,1,0,3,4,3,1,1,1,1,2,4,3,3,1
+4,Argentina,South America,2004,4,4,2,3,4,3,4,4,3,2,4,0,0,1,0,3,0
+5,Argentina,South America,2005,1,1,2,0,2,2,3,1,0,2,0,4,4,0,0,3,1
+6,Argentina,South America,2006,0,4,3,4,4,2,4,1,2,3,0,2,1,1,4,0,1
+7,Argentina,South America,2007,0,4,0,1,3,3,3,4,3,1,0,2,0,1,0,2,1
+8,Argentina,South America,2008,4,0,0,1,3,3,3,0,1,4,0,2,2,4,0,2,1
+9,Argentina,South America,2008,0,0,3,4,3,1,1,3,4,3,2,3,2,1,4,3,2
+10,Argentina,South America,2009,3,2,4,0,0,2,0,0,4,0,1,2,3,3,3,3,1
+11,Argentina,South America,2010,4,1,2,3,2,3,0,3,3,4,4,3,0,0,4,4,4
+12,Armenia,Middle East,2011,3,4,1,2,0,3,3,0,0,0,2,2,0,0,4,3,2
+13,Armenia,Middle East,2012,3,2,3,3,0,1,2,3,3,0,4,2,3,3,2,4,2
+14,Armenia,Middle East,2013,1,3,4,4,3,4,4,0,1,2,3,0,2,4,4,2,2
+15,Armenia,Middle East,2014,2,1,0,3,4,4,1,3,1,2,0,2,0,2,4,3,1
+16,Antigua and Barbuda,Central America,1998,0,0,3,2,3,2,2,1,4,0,2,4,1,1,1,1,3
+17,Antigua and Barbuda,Central America,1999,1,4,3,1,1,0,0,1,1,2,1,4,2,3,1,1,4
+18,Antigua and Barbuda,Central America,2000,4,2,1,3,0,0,2,3,4,4,4,3,1,3,1,4,1
+19,Antigua and Barbuda,Central America,2001,0,0,1,0,2,2,0,3,3,3,3,2,0,3,2,4,4
+20,Antigua and Barbuda,Central America,2003,4,1,3,2,1,3,4,1,0,0,1,4,0,2,2,3,2
+21,Antigua and Barbuda,Central America,2004,0,0,3,2,4,4,0,4,2,1,0,3,0,2,3,4,2
+22,Antigua and Barbuda,Central America,2005,2,3,2,2,0,0,2,1,4,2,0,0,0,0,2,0,4
+23,Antigua and Barbuda,Central America,2006,4,1,0,2,0,3,4,1,1,3,0,3,1,4,1,1,4
