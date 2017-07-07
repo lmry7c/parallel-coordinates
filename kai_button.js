@@ -1,3 +1,7 @@
+// Parallel Coordinates
+// Copyright (c) 2012, Kai Chang
+// Released under the BSD License: http://opensource.org/licenses/BSD-3-Clause
+
 var width = document.body.clientWidth,
     height = d3.max([document.body.clientHeight-540, 240]);
 
@@ -76,7 +80,6 @@ d3.csv("dummy_data3.csv", function(raw_data) {
     return d;
   });
 
-
   // Extract the list of numerical dimensions and create a scale for each.
   xscale.domain(dimensions = d3.keys(data[0]).filter(function(k) {
     return (_.isNumber(data[0][k])) && (yscale[k] = d3.scale.linear()
@@ -127,7 +130,6 @@ d3.csv("dummy_data3.csv", function(raw_data) {
           if (dragging[d] < 12 || dragging[d] > w-12) {
             remove_axis(d,g);
           }
-
 
           // TODO required to avoid a bug
           xscale.domain(dimensions);
@@ -222,8 +224,6 @@ function create_legend(colors,brush) {
           brush();
         }
       });
-
-
 
   legend
     .append("span")
@@ -450,7 +450,7 @@ function brush() {
     d3.select("#exclude-data").attr("disabled", "disabled");
   };
 
-  // total by group
+  // total by food group
   var tallies = _(selected)
     .groupBy(function(d) { return d.group; })
 
@@ -675,12 +675,6 @@ function exclude_data() {
   rescale();
 }
 
-function reset(){
-    new_data = data;
-    data = new_data;
-    rescale();
-}
-
 function remove_axis(d,g) {
   dimensions = _.difference(dimensions, [d]);
   xscale.domain(dimensions);
@@ -693,8 +687,6 @@ d3.select("#keep-data").on("click", keep_data);
 d3.select("#exclude-data").on("click", exclude_data);
 d3.select("#export-data").on("click", export_csv);
 d3.select("#search").on("keyup", brush);
-d3.select('#btnReset').on("click", reset);
-
 
 
 // Appearance toggles
@@ -735,19 +727,3 @@ function search(selection,str) {
   pattern = new RegExp(str,"i")
   return _(selection).filter(function(d) { return pattern.exec(d.name); });
 }
-
-var column_keys = d3.keys(data[0]);
-  var columns = column_keys.map(function(key,i) {
-    return {
-      id: key,
-      name: key,
-      field: key,
-      sortable: true
-    }
-  });
-
-  var options = {
-    enableCellNavigation: true,
-    enableColumnReorder: false,
-    multiColumnSort: false
-  };
