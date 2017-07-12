@@ -76,6 +76,9 @@ d3.csv("dummy_data3.csv", function(raw_data) {
     return d;
   });
 
+ datafull = data;
+
+
 
   // Extract the list of numerical dimensions and create a scale for each.
   xscale.domain(dimensions = d3.keys(data[0]).filter(function(k) {
@@ -211,7 +214,7 @@ function create_legend(colors,brush) {
     .enter().append("div")
       .attr("title", "Hide group")
       .on("click", function(d) { 
-        // toggle food group
+        // toggle group
         if (_.contains(excluded_groups, d)) {
           d3.select(this).attr("title", "Hide group")
           excluded_groups = _.difference(excluded_groups,[d]);
@@ -257,7 +260,7 @@ function data_table(sample) {
     return a[col] < b[col] ? -1 : 1;
   });
 
-  var table = d3.select("#food-list")
+  var table = d3.select("#country-list")
     .html("")
     .selectAll(".row")
       .data(sample)
@@ -488,7 +491,7 @@ function paths(selected, ctx, count) {
 
   shuffled_data = _.shuffle(selected);
 
-  data_table(shuffled_data.slice(0,25));
+  data_table(shuffled_data.slice(0,100));
 
   ctx.clearRect(0,0,w+1,h+1);
 
@@ -679,6 +682,16 @@ function reset(){
     new_data = data;
     data = new_data;
     rescale();
+    brush();
+
+}
+
+function clearAll(){
+    new_data = datafull;
+    data = new_data;
+    rescale();
+    brush();
+
 }
 
 function remove_axis(d,g) {
@@ -693,7 +706,8 @@ d3.select("#keep-data").on("click", keep_data);
 d3.select("#exclude-data").on("click", exclude_data);
 d3.select("#export-data").on("click", export_csv);
 d3.select("#search").on("keyup", brush);
-d3.select('#btnReset').on("click", reset);
+d3.select("#btnReset").on("click", reset);
+d3.select("#btnResetAll").on("click", clearAll)
 
 
 
